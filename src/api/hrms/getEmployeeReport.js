@@ -29,8 +29,8 @@ const getEmployeeReport = async () => {
       `${process.env.API_BASE_URL}/ttEmployeeReportServices.php`,
       {
         params: {
-          hrmsServiceHandShakeCode: process.env.HRMS_SERVICE_HANDSHAKE_CODE,
-          companyId: process.env.COMPANY_ID,
+          hrmsServiceHandShakeCode:ed86783617fceb25aab84581fc9397b4,
+          companyId:8,
         },
       }
     );
