@@ -23,6 +23,8 @@ const axios = require('axios');
 
 const getEmployeeReport = async () => {
   try {
+    console.log('HRMS_SERVICE_HANDSHAKE_CODE:', process.env.HRMS_SERVICE_HANDSHAKE_CODE);
+    console.log('COMPANY_ID:', process.env.COMPANY_ID);
     const response = await axios.get(
       `${process.env.API_BASE_URL}/ttEmployeeReportServices.php`,
       {
