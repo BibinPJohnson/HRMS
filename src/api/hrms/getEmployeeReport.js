@@ -27,7 +27,11 @@ const getEmployeeReport = async () => {
     console.log('COMPANY_ID:', process.env.COMPANY_ID);
     const response = await axios.get(
       `${process.env.API_BASE_URL}/ttEmployeeReportServices.php`,
-      {
+      {        
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
+          'Accept-Language': 'en-US,en;q=0.9'
+        },
         params: {
           hrmsServiceHandShakeCode:'ed86783617fceb25aab84581fc9397b4',
           companyId:'8',
